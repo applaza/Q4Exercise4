@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>Unit Converter</title>
+	<style type="text/css">
+		h1{
+			color: #1E8449 ;
+			font-family: Martel Sans;
+		}
+        
+		h4{
+			color: #C0392B ;
+			font-family: Martel Sans;
+		}
+		label{
+			font-family: Martel Sans;
+		}
+		button{
+			font-family: Martel Sans;
+		}
+		div{
+			background-color: #D4E6F1 ;
+		}
+		body{
+			background-color: F8F9F9 ;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="container" align="center">
+		<br>
+		<h1>📐📏Unit Converter📏📐</h1>
+		<br>
+		<h4>Meters to Centimeters</h4>
+		<form>
+			<label>Enter Value in Meters(m): </label>
+			<input type="number" name="num_1" id="num_1"><br>
+			<br>
+			<button type="button" onclick="Compute()">Convert</button>
+		</form>
+		<script>
+			function Compute() {
+				var num_1 = document.getElementById("num_1").value;
+				var num_2 = 100;
+				var product = Number(num_1) * Number(num_2);
+				var result = document.getElementById("result");
+				alert("The value inputed in cm is: " + product)
+				result.innerHTML = num_1 + " meter(s) = " + product + " centimeter(s)";
+				result.style.display = "block";
+			}
+		</script>
+		<br>
+		<br>
+		<br>
+	</div>
+</body>
+</html>
